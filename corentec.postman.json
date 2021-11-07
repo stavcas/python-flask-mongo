@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "f118488c-ab52-4f76-88b4-5b6bf8efe324",
+		"name": "corentec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - /hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:80/hello",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - /hello - with data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "stav"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/hello",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"hello"
+					]
+				},
+				"description": "Returns \"hello, \"+ name"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - /hello - with data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "stav"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/hello",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"hello"
+					]
+				},
+				"description": "update the name with data contents"
+			},
+			"response": []
+		}
+	]
+}
