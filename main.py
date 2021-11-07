@@ -38,7 +38,7 @@ def say_hello():
 @app.route('/hello', methods=['POST'])
 def say_hello_to_user():
     current_name = request.get_data(as_text=True)
-    return "hello " + current_name, 200
+    return "Hello " + current_name, 200
 
 
 @app.route('/hello', methods=['PUT'])
