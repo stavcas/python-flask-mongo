@@ -32,7 +32,7 @@ def read_name_from_db():
 @app.route('/hello')
 def say_hello():
     username = read_name_from_db()
-    return "Hello, " + username
+    return "Hello,  " + username
 
 
 @app.route('/hello', methods=['POST'])
